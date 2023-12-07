@@ -1,1 +1,1 @@
-# rps-game
+This project is the first assignment in TOP Foundations javascript section. The assignment is to make a rock, paper, scissors game using javascript as the programming language. This assignment will display what I have learned whilst also showing me where my understanding is lacking and what I need to improve on. 
