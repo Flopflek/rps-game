@@ -22,6 +22,12 @@ if (playerSelection === computerSelection) {
 
 }
 
+function replayRound () {                                   // function is called on if a tie condition is met in the playround function, requests new values and calls on the playround function to play again.
+    computerSelection = getComputerChoice()
+    playerSelection = prompt("It's a tie! please enter rock, paper, or scissors again").toUpperCase();
+    return playRound(playerSelection, computerSelection);
+}
+    
     
         
 let computerSelection = getComputerChoice()    //variable that calls on a function and stores the value.
