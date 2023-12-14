@@ -21,16 +21,16 @@ if (playerSelection === computerSelection) {
     return (replayRound())
     
 }else if (playerSelection === "ROCK" && computerSelection === "SCISSORS") {
-    return ("You've won the round");
+    return (playerRoundWin);
 
 }else if (playerSelection === "PAPER" && computerSelection === "ROCK") {
-    return ("You've won the round");
+    return (playerRoundWin);
 
 }else if (playerSelection === "SCISSORS" && computerSelection === "PAPER") {
-    return ("You've won the round");
+    return (playerRoundWin);
 
 }else 
-    return ("You've lost the round");
+    return (computerRoundWin);
 
 }
 
