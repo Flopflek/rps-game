@@ -73,3 +73,7 @@ let playerSelection = prompt("Enter rock, paper, or scissors gamer").toUpperCase
 
 console.log(playRound(playerSelection, computerSelection)); //calls a function and logs the selected variables.
 
+//calls on the game function to execute
+game() 
+//ends the game 
+endGame()
