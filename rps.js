@@ -28,7 +28,13 @@ function replayRound () {                                   // function is calle
     return playRound(playerSelection, computerSelection);
 }
     
-    
+//global variable declarations
+let computerScore = 0;
+let playerScore = 0;
+const playerWin = "Victory";
+const computerWin = "Defeat";
+const playerRoundWin = "You've won the round"; 
+const computerRoundWin = "You've lost the round";      
         
 let computerSelection = getComputerChoice()    //variable that calls on a function and stores the value.
 let playerSelection = prompt("Enter rock, paper, or scissors gamer").toUpperCase();  // variable that stores user entered value and converts to to uppercase.
