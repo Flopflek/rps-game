@@ -4,6 +4,18 @@ function getComputerChoice() {                                     // function t
     return choice;
 }
 
+function game() {
+    
+    for (let i = 1; i <=5; i++) {
+        let computerSelection = getComputerChoice()    //variable that calls on a function and stores the value.
+        let playerSelection = prompt("Enter rock, paper, or scissors gamer").toUpperCase();       // variable that stores user entered value and converts to to uppercase.
+        let roundResult = playRound(playerSelection, computerSelection); //calls a function and stores the selected variable values.  
+        console.log(roundResult);
+        finalScore(roundResult);
+       
+    }      
+}
+
 function playRound(playerSelection, computerSelection) {        // playRound runs a round with conditional outcomes. 
 if (playerSelection === computerSelection) {
     return (replayRound())
