@@ -39,6 +39,26 @@ function replayRound () {                                   // function is calle
     playerSelection = prompt("It's a tie! please enter rock, paper, or scissors again").toUpperCase();
     return playRound(playerSelection, computerSelection);
 }
+
+
+//final scoring function
+function finalScore(roundResult) {
+
+    if (roundResult === playerRoundWin) {
+    (playerScore++);
+
+    }else (computerScore++);
+    
+    if (playerScore === 3) {
+    console.log(playerWin)
+
+    }else if (computerScore === 3) {
+    console.log(computerWin)
+   
+        }if (playerScore === 3 || computerScore === 3) {
+            return endGame()
+        } 
+    }
     
 //global variable declarations
 let computerScore = 0;
