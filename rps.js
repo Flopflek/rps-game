@@ -68,10 +68,7 @@ const computerWin = "Defeat";
 const playerRoundWin = "You've won the round"; 
 const computerRoundWin = "You've lost the round";      
         
-let computerSelection = getComputerChoice()    //variable that calls on a function and stores the value.
-let playerSelection = prompt("Enter rock, paper, or scissors gamer").toUpperCase();  // variable that stores user entered value and converts to to uppercase.
 
-console.log(playRound(playerSelection, computerSelection)); //calls a function and logs the selected variables.
 
 //calls on the game function to execute
 game() 
